@@ -1,0 +1,29 @@
+{
+  "name": "Node.js & React",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:18",
+  "postCreateCommand": "npm install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "styled-components.vscode-styled-components",
+        "eamodio.gitlens"
+      ]
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "18"
+    }
+  },
+  "forwardPorts": [5173],
+  "postStartCommand": "npm install react-icons && npm run dev",
+  "portsAttributes": {
+    "5173": {
+      "label": "Vite Development Server",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "remoteUser": "node"
+}
