@@ -1,0 +1,65 @@
+.about {
+    flex: 1;
+    margin-left: 250px; /* Navbar width */
+    display: flex;
+    flex-direction: column; /* Ensure vertical stacking */
+    background: linear-gradient(135deg, #f4f4f4, #eaeaea); /* Light gradient */
+    color: #333;
+    padding: 60px 20px;
+    box-sizing: border-box; /* Include padding in width/height calculations */
+    height: auto; /* Ensure full viewport height */
+  }
+  
+  .about-content {
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .about h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: var(--accent-color);
+    margin: 10px auto 20px;
+    border-radius: 2px;
+  }  
+  
+  .about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  .about ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    font-size: 1.1rem;
+  }
+  
+  .about ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  .about ul li::before {
+    content: '🔹';
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+  }
+  
+  .icon {
+    color: var(--accent-color);
+    margin-right: 10px;
+  }
+  

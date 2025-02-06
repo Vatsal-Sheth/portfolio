@@ -1,0 +1,60 @@
+/* Theme Colors */
+:root {
+    --background-color: #F8F9FA;
+    --primary-color: #2D3142;
+    --accent-color: #EF8354;
+    --text-color: #2D3142;
+}
+
+/* Apply New Theme */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+}
+
+/* Navigation */
+nav {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Accent Buttons */
+.button, .btn {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button:hover, .btn:hover {
+    background-color: #D26948; /* Darker Orange */
+}
+
+/* Links */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+/* Section Styling */
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

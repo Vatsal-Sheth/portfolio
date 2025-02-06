@@ -1,0 +1,94 @@
+/* Base Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 20%;
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .navbar-open {
+    transform: translateX(0); /* Show when toggled */
+  }
+  
+  /* Navbar Logo */
+  .navbar-logo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: var(--accent-color);
+  }
+  
+  /* Links Styling */
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px; /* Space between links */
+    padding: 0;
+  }
+  
+  .navbar-links li {
+    margin: 0;
+  }
+  
+  .navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover effect */
+  .navbar-links a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    transform: scale(1.1); /* Slight zoom effect */
+  }
+  
+  /* Active section effect */
+  .navbar-links a.active {
+    background-color: var(--accent-color);
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hamburger Menu */
+  .hamburger {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+  
+    .navbar {
+      width: 200px;
+    }
+  }
+  
